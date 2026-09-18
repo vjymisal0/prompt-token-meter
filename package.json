@@ -1,0 +1,47 @@
+{
+  "name": "prompt-token-meter",
+  "version": "1.0.0",
+  "description": "Blazing fast zero-dependency token estimator and budget calculator for OpenAI, Claude, and Gemini prompt engineering without bulky WASM binaries.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    }
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "token",
+    "tokenizer",
+    "token-counter",
+    "prompt-engineering",
+    "llm",
+    "openai",
+    "claude",
+    "gemini",
+    "gpt-4o",
+    "tiktoken",
+    "budget",
+    "zero-dependency"
+  ],
+  "author": "vjymisal0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vjymisal0/prompt-token-meter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vjymisal0/prompt-token-meter/issues"
+  },
+  "homepage": "https://github.com/vjymisal0/prompt-token-meter#readme",
+  "engines": {
+    "node": ">=18"
+  }
+}
