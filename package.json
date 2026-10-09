@@ -1,6 +1,6 @@
 {
   "name": "prompt-token-meter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Blazing fast zero-dependency token estimator and budget calculator for OpenAI, Claude, and Gemini prompt engineering without bulky WASM binaries.",
   "type": "module",
   "main": "./src/index.js",
@@ -8,11 +8,13 @@
   "exports": {
     ".": {
       "types": "./src/index.d.ts",
-      "import": "./src/index.js"
-    }
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
   },
   "files": [
-    "src"
+    "src",
+    "CHANGELOG.md"
   ],
   "scripts": {
     "test": "node --test test/*.test.js"
